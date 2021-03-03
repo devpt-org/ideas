@@ -1,21 +1,21 @@
 # BASEWRITE
 
-O propósito do basewrite a ser uma aplicação github para complementar a área de documentação/especificação com todas  as ligações possiveis no desenho, explicação, desempenho e timeline de um produto. A main feature será depois de ter todas as concepções descritas se possa ler como um livro e exportar essa especificação para pdf.
+O propósito do basewrite é ser uma aplicação GitHub para complementar a área de documentação/especificação com todas as ligações possiveis no desenho, explicação, desempenho e timeline de um produto. A main feature será a produção de um livro de fácil leitura com todas as concepções descritas, permitindo a exportação da especificação em PDF.
 
-As permissas que devem constar poderão ser a simplicidade de produzis uma especificação e perceber o seu intuituito, tarefas que foram agregadas, issues que foram associadas ao seu desenvolvimento, intervenientes e registos de commits etc. Até com a diferenciação de timimg sobre os commits poderá dar uma relatório mais macro sobre tempo de desenvolvimento envolvido.
+As permissas que devem constar devem ser a simplicidade de produzir uma especificação e perceber o seu intuito, tarefas que foram agregadas, issues que foram associadas ao seu desenvolvimento, intervenientes e registos de commits. A diferenciação de timming entre os commits pode gerar um relatório mais macro sobre o tempo de desenvolvimento envolvido.
 
-No nivel de intereção do user quando descreve cada um dos épicos com os devidos cenários seria ter algo parecido com que o medium faz quando queremos comentar aréas de texto para poder transformar em tarefas no projecto do github.
+As tarefas num projeto GitHub seriam geradas automaticamente através da criação de épicos e dos devidos cenários no BaseWrite, à semelhança do que faz o Medium quando se comenta áreas de texto.
 
 ## Bases e inspirações
 
-Para se perceber melhor o intuito da ferramenta este grupo de artigos explicam perfeitamente o próposito da aplicação, sugiro que leiam para perceberem a solução e problemática envolvida:
+O próposito da aplicação é perfeitamente descrito no seguinte grupo de artigos, de leitura recomendada para que se perceba a solução e problemática envolvida:
 
 - https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/
- - https://www.joelonsoftware.com/2000/10/03/painless-functional-specifications-part-2-whats-a-spec/
- - https://www.joelonsoftware.com/2000/10/04/painless-functional-specifications-part-3-but-how/
- - https://www.joelonsoftware.com/2000/10/15/painless-functional-specifications-part-4-tips/
+- https://www.joelonsoftware.com/2000/10/03/painless-functional-specifications-part-2-whats-a-spec/
+- https://www.joelonsoftware.com/2000/10/04/painless-functional-specifications-part-3-but-how/
+- https://www.joelonsoftware.com/2000/10/15/painless-functional-specifications-part-4-tips/
 
-Spec example: https://www.joelonsoftware.com/whattimeisit/ (super clean)
+**Spec example:** https://www.joelonsoftware.com/whattimeisit/ (super clean)
 
 ## Adversários
 
