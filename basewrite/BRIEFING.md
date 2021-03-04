@@ -54,6 +54,8 @@ O user instala aplicação no repo, para se interagir com a source code e todas 
 
 ![alt text](./flowchart-concept.jpg "Concept")
 
+[Miro link](https://miro.com/welcomeonboard/1inwn1qPWKwqtdUkWaoac1yu0czSePaCDpMPaOscF4GwE6pMTIgrD5eU361yCCWX)
+
 ## Tecnologia
 
 O uso de conceito REst, não necessáriamente multiplas bds e micro-serviços até ser uma unica db. Utilização de ferramentas já disponiveis para ajudar a rapidez de desenvolvimento nomeadamente:
