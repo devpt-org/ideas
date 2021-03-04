@@ -17,56 +17,82 @@ O próposito da aplicação é perfeitamente descrito no seguinte grupo de artig
 
 **Spec example:** https://www.joelonsoftware.com/whattimeisit/ (super clean)
 
-## Adversários
+## Concorrência
 
-- Confluence, mas não integra nada com github.
-- specfox.com, tb não integra em nada com github e o editor deles é mero WYSIWYG.
+### Análise
+#### Confluence
 
-Uma janela de oportunidade sem adversários nesta ârea.
+- É provavelmente o maior player do mercado no que toca a documentação e especificações
+- Não tem integração direta com GitHub à exceção de integrações com addons, p.ex.:
+  - [Github links for Confluence](https://marketplace.atlassian.com/apps/1216106/github-links-for-confluence?hosting=cloud&tab=overview)
+  - [Git for Confluence](https://marketplace.atlassian.com/apps/1211675/git-for-confluence?hosting=server&tab=overview)
+  - [Github Macros for Confluence](https://marketplace.atlassian.com/apps/1216734/github-macros-for-confluence?hosting=cloud&tab=overview)
+  
+    Permitem linkar ítens do GitHub (repositórios, issues, PRs, branches, etc) mas não permitem criação de nada no GitHub a partir das plataformas.
+    
+#### Specfox.com
+- Tem vários pontos em comum com a nossa spec e pode ser um ponto de interesse para analisarmos o UX. Como grande desvantagem, não integra em nada com GitHub e o seu editor é meramente WYSIWYG - o que podemos usar como nossa vantagem, caso usemos p.ex. Markdown e permitir uma edição mais visual para utilizadores não técnicos.
+    
+#### Tray.io
+- Permite a criação de Workflows entre a plataforma deles e o GitHub, mas não é claro que tipo de ações permite.
 
-## Pretensão
+### Conclusão
+Depreende-se da análise anterior, que existe uma janela de oportunidade, sem concorrência de peso neste nicho.
 
-Uma imagem vale por mil palavras
+## Aspiração
 
-![alt text](./spec-example.png "Spec example")
+A descrição dum Spec gerado numa imagem:
+
+![Spec example](./spec-example.png "Spec example")
 
 ## Data
 
-Entidades que poderam ser extrapuladas do exemplo acima para a criação da base de dados:
+Entidades que puderam ser extrapuladas do exemplo acima para a criação da base de dados:
 
-- Projecto (github)
+- Projecto (GitHub)
 - Descritivo (Prólogo)
 - Épicos
   - Overview
   - Cenários
   - Objectivos e não objectivos
   - Especificação
-    - Flow???
-    - Historias (feature/screen)
-    - Tarefas (to github)
-  - ...github info
+    - Flow
+    - Histórias (feature/screen)
+      - Notas Técnicas 
+    - Tarefas (a serem sincronizadas com o GitHub)
+  - Dados relacionados no GitHub
+    - Repositórios
+    - Pull Requests
+    - Commits
+    - Branches
+    - Issues
+    - Utilizadores
+    - Projetos
+    - Tarefas nos Boards
 
 ![alt text](./db-simple-example.png "DB example")
+[Miro link to edit DB schema](https://miro.com/welcomeonboard/1inwn1qPWKwqtdUkWaoac1yu0czSePaCDpMPaOscF4GwE6pMTIgrD5eU361yCCWX)
 
 ## Flow
 
-O user instala aplicação no repo, para se interagir com a source code e todas as features que envolvem o repo. Do base write poder assinalar que partes da feature/screen irá criar tarefas no project do github. Todo o registo complementar de estado se encontra, se tem issues, PR e historico de commits bem como timeline de tempo de desenvolvimento deverá constar como extra management view de relatorio do épico.
+1) O utilizador instala uma aplicação GitHub com permissão de escrita e leitura no repositório (para que seja possível criar e sincronizar issues e outro tipo de conteúdos)
+2) No BaseWrite o utilizador escolhe que partes da Feature/Screen criará tarefas no projeto do GitHub
+
+No épico, existirá uma view de extra management que permitirá aceder a informação relativa ao estado, issues, PRs, histórico de commits e timeline de tempo de desenvolvimento.
 
 ![alt text](./flowchart-concept.jpg "Concept")
 
-[Miro link](https://miro.com/welcomeonboard/1inwn1qPWKwqtdUkWaoac1yu0czSePaCDpMPaOscF4GwE6pMTIgrD5eU361yCCWX)
-
 ## Tecnologia
 
-O uso de conceito REst, não necessáriamente multiplas bds e micro-serviços até ser uma unica db. Utilização de ferramentas já disponiveis para ajudar a rapidez de desenvolvimento nomeadamente:
+O uso de conceito REST, não necessariamente múltiplas bds e micro-serviços até ser uma única db. Utilização de ferramentas já disponiveis para ajudar a rapidez de desenvolvimento nomeadamente:
 
-- gotrue (centralized auth with audience and github integration) o meu fork com extras: https://github.com/websublime/gotrue
+- gotrue (centralized auth with audience and GitHub integration) o meu fork com extras: https://github.com/websublime/gotrue
 - gotrue-js (fe consumer): https://github.com/websublime/gotrue-js
 - postgres with multiple batteries included: https://github.com/websublime/postgres
 - courier: pubsub com hooks e preparado para events do postgres (realtime) bem como socket por topico: https://github.com/websublime/courier
 - file server minio with auth (wrapper de minio com segurança e privacidade): https://github.com/websublime/barrel
 - Hasura.io para api/graphql (superb)
 
-Tudo isto são quase forks meus que tenho vindo a trabalhar para ajudar a construi uma infra-estrutura que dará para este e outros projectos. Courier quase finalizado e barrel também. Tudo dockers.
+Tudo isto são quase forks meus que tenho vindo a trabalhar para ajudar a construir uma infra-estrutura que dará para este e outros projectos. Courier quase finalizado e barrel também. Tudo dockers.
 
 Linguagem de eleição para backend: golang. Frontend talvez Vue ou Angular.
