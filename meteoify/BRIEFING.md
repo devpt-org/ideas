@@ -63,17 +63,23 @@ A ideia seria utilizar SwiftUI para iOS, e JetpackCompose para Android. São dua
 **High-level Architecture:**
 ![High-level Architecture](./high-level-architecture.png "High-level Architecture")
 
-Para não haver manutenção de backend, ou gastar dinheiro com cloud functions, os clientes fazem os pedidos diretamente a Weather API, e guardam localmente o dia anterior. Os Cons disto é que pode haver alguma lógica duplicada, pois o serviço de notificações também vai usar diretamente a API, e a primeira vez que os users usam a app, não têm a info do dia anterior… Este último Con pode ser um factor decisivo se temos ou não um backend… TBD.
-Cons de Kotlin Multiplatform:
-- Setup complexo. (Requer bons conhecimentos de Gradle + iOS Linking)
-- CI/CD complexo.
-Outras opções para mobile app:
+Temos que analisar a necessidade do backend para o envio de push notifications, pois caso não fosse necessário, evitaríamos a manutenção de um backend e/ou possíveis gastos com Cloud Functions, sendo que os clientes fariam os pedidos diretamente à Weather API, e guardaríam localmente o dia anterior.
+
+Os __Cons__ disto é que pode haver alguma lógica duplicada, pois o serviço de notificações também vai usar diretamente a API, e a primeira vez que os users usam a app, não têm a info do dia anterior. Este último __Con__ pode ser um factor decisivo se temos ou não um backend. **TBD**.
+
+### Mobile:
+**Cons de Kotlin Multiplatform:**
+- Setup complexo (Requer bons conhecimentos de Gradle + iOS Linking)
+- CI/CD complexo
+
+**Outras opções para mobile app:**
 - Flutter
 - React Native
-- iOS + SwiftUI e Android + JetpackCompose, sem Kotlin Multiplatform. A app é bastante pequena, portanto usar o Kotlin Multiplatform, e dado ao setup complexo, provavelmente não ganhamos nada em usar KMM.
-Em caso de backend:
+- iOS + SwiftUI e Android + JetpackCompose, sem Kotlin Multiplatform. A app é bastante pequena, portanto usar o Kotlin Multiplatform, e dado ao setup complexo, provavelmente não ganhamos nada em usar KMM
+
+### Backend (caso aplicável)
 - Cloud functions + Cache. O IPMA também atualiza a informação a horas específicas, portanto, na maioria das vezes iria só buscar a cache.  
 
-Sources
-API - https://api.ipma.pt/ (grátis)
-AccuWeather (pago - faz sentido?)
+## Possíveis Sources de dados
+- API - https://api.ipma.pt/ (grátis)
+- AccuWeather (pago - faz sentido?)
