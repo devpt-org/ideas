@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  Este é um repositório destinado ao armazenamento de ideias dos membros da [https://www.sapo.pt](comunidade devPT).
+  Este é um repositório destinado ao armazenamento de ideias dos membros da [https://devpt-org.github.io/](comunidade devPT).
   </p>
 
 <p align="center">
