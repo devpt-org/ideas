@@ -87,4 +87,4 @@ Assim que uma ideia é aprovada, por norma, o autor da mesma é o indicado como 
 
 Caso exista interesse, é possível que um projeto tenha dois maintainers designados e com responsabilidades de gestão, ajudando a evitar o possível abandono de projetos.
 
-Caso exista apenas um único responsável pelo projeto e este fique inativo por um período de 3 meses, um contribuidor pode pedir aos administradores da organização devPT a nova nomeação de um novo responsável pelo projeto.
+Caso exista apenas um único responsável pelo projeto e este fique inativo por um período de 3 meses, um contribuidor pode pedir aos administradores da organização devPT a nova nomeação de um novo responsável pelo projeto. Até à nomeação de um novo responsável, a organização devPT tem liberdade para tomar quaisquer decisões sobre o projeto.
