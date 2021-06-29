@@ -80,3 +80,11 @@ Podes contribuir de diversas formas adicionando uma nova ideia ou melhorando uma
 3) O ficheiro `BRIEFING.md` da ideia é alterado até que se chegue a um consenso
 4) A ideia é aprovada e faz-se merge para master da ideia, ou, o Pull Request é recusado
 5) Assim que a ideia é aprovada, é criado um repositório onde o projeto poderá ter início e serão dados privilégios ao autor da ideia, sendo no entanto recomendado que todas as alterações sejam enviadas por Pull Request e fiquem pendentes de revisão por outros colaboradores
+
+## O que acontece caso o responsável pelo projeto fique inativo?
+
+Assim que uma ideia é aprovada, por norma, o autor da mesma é o indicado como principal responsável pela manutenção do repositório, passando a ter como responsabilidade a gestão de issues, PRs e eventuais adições e melhoramentos com base na ideia sugerida.
+
+É possível que um projeto tenha dois maintainers designados e com responsabilidades de gestão caso haja interesse, ajudando a evitar o possível abandono de projetos.
+
+Caso apenas exista um único responsável pelo projeto e este fique inativo por um período de 3 meses, um contribuidor pode pedir aos administradores da organização devPT a nova nomeação de um novo responsável pelo projeto.
