@@ -1,0 +1,40 @@
+# Estirador
+
+"Melhora uma vez, lança para todos"
+
+Estirador é um template como qualquer outro, mas a diferença é que este continua a receber atualizações e melhorias, pode ser mudado para outras linguagens e ferramentas, e até para templates específicos para empresas
+
+Surgiu da necessidade de criar várias apps em pouco tempo, algumas nos mesmos mercados, e em paralelo, manter as apps antigas já lançadas estáveis e com as últimas melhorias e correções que vão sendo desenvolvidas nos projectos mais recentes.
+
+## Bases e inspirações
+
+- <https://git-scm.com/docs/git-remote>
+
+## Concorrência
+
+- Copy / paste de código
+- Geradores de boilerplate que geram o código uma vez
+- Bibliotecas de código partilhado criadas pelas próprias empresas
+
+## Flow
+
+- O utilizador clona o projecto `estirador` normalmente, mas dá um nome diferente à pasta do projecto
+- O utilizador remove o `git remote` do `estirador` e adiciona o do repositório do novo projecto
+- O utilizador constrói o projecto
+- Pontualmente, o utilizador corre o comando `update-project-boilerplate.sh` para atualizar a base técnica do projecto com a distribuição padrão do `estirador` ou um outro boilerplate empresarial baseado no sistema do `estirador`
+
+## Tecnologia
+
+### Necessárias
+- Git
+
+### Opcionais, incluídas na distribuição padrão
+- NestJS (não confundir com NextJS)
+- Webpack
+- Docker
+- Gatsby
+- React
+- Typescript
+- Jest
+- ESLint
+- Prettier
