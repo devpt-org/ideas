@@ -18,7 +18,7 @@ Surgiu da necessidade de criar várias apps num reduzido espaço de tempo, algum
 
 ## Flow
 
-- O utilizador clona o projecto `estirador` normalmente, mas dá um nome diferente à pasta do projecto
+- O utilizador clona o projecto `estirador`, mas dá um nome diferente à pasta do projecto, neste caso _your-project-name_: `git clone ssh://xxx@xxx/estirador.git your-project-name`
 - O utilizador remove o `git remote` do `estirador` e adiciona o do repositório do novo projecto
 - O utilizador constrói o projecto
 - Pontualmente, o utilizador corre o comando `update-project-boilerplate.sh` para atualizar a base técnica do projecto com a distribuição padrão do `estirador` ou um outro boilerplate empresarial baseado no sistema do `estirador`
