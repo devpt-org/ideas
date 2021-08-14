@@ -2,7 +2,7 @@
 
 "Melhora uma vez, lança para todos"
 
-Estirador é um template como qualquer outro, mas a diferença é que este continua a receber atualizações e melhorias, pode ser mudado para outras linguagens e ferramentas, e até para templates específicos para empresas
+O Estirador é um template em constante desenvolvimento, adaptável para as mais diversas linguagens, ferramentas e até para servir como base em projetos específicos de empresas.
 
 Surgiu da necessidade de criar várias apps em pouco tempo, algumas nos mesmos mercados, e em paralelo, manter as apps antigas já lançadas estáveis e com as últimas melhorias e correções que vão sendo desenvolvidas nos projectos mais recentes.
 
