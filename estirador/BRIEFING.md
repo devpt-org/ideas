@@ -4,7 +4,7 @@
 
 O Estirador é um template em constante desenvolvimento, adaptável para as mais diversas linguagens, ferramentas e até para servir como base em projetos específicos de empresas.
 
-Surgiu da necessidade de criar várias apps em pouco tempo, algumas nos mesmos mercados, e em paralelo, manter as apps antigas já lançadas estáveis e com as últimas melhorias e correções que vão sendo desenvolvidas nos projectos mais recentes.
+Surgiu da necessidade de criar várias apps num reduzido espaço de tempo, algumas nos mesmos mercados, e em paralelo, manter as apps antigas já lançadas estáveis e com as últimas melhorias e correções que vão sendo desenvolvidas em diversos módulos comuns nos projectos mais recentes.
 
 ## Bases e inspirações
 
