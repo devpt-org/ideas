@@ -23,6 +23,8 @@ Surgiu da necessidade de criar várias apps num reduzido espaço de tempo, algum
 - O utilizador constrói o projecto
 - Pontualmente, o utilizador corre o comando `update-project-boilerplate.sh` para atualizar a base técnica do projecto com a distribuição padrão do `estirador` ou um outro boilerplate empresarial baseado no sistema do `estirador`
 
+> O flow apresentado acima é semelhante ao de criar um _fork_ de um repositório no Github. A diferença é que este workflow é baseado do uso de  `git remotes`, o que permite criar _forks_ mas entre qualquer provider de _git_.
+
 ## Tecnologia
 
 ### Necessárias
