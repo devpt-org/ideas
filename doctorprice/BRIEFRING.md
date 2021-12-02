@@ -44,32 +44,3 @@ A ideia seria ter uma layer de abstração que invocaria cada script, independen
 A desvantagem é que pode complicar em termos de Infra - no entanto utilizando AWS Lambdas (com imagens Docker custom), damos suporte para praticamente tudo.
 
 ![API Flow](./APIFlow.png.png "API Flow")
-
-
-
-Snippets de código existente:
-Código inicial para a retirada de valores da pcdiga
-https://gist.github.com/WhoIsStone/64dd1b735c063cc7e690ea2eec9a87c0
-Inclui as categorias da pcdiga bem como os ids, e o script para acedar a API de busca do doofinder
-
-
-
-
-
-
-CuantoQusta
-QuastaQuanto
-KustomKuantoKusta
-estareialevarbanhada.pt
-antimico.pt
-Preçocerto
-preçocorreto
-Amimnaomenganas
-Blackfridayotanas
-ofertasemloja
-faroldospreços / radardospreços
-openprices
-pricecheck
-bolsa de preços
-realcapitalism.com
-
