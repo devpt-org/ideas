@@ -43,4 +43,4 @@ A ideia seria ter uma layer de abstração que invocaria cada script, independen
 
 A desvantagem é que pode complicar em termos de Infra - no entanto utilizando AWS Lambdas (com imagens Docker custom), damos suporte para praticamente tudo.
 
-![API Flow](./APIFlow.png.png "API Flow")
+![API Flow](./APIFlow.png "API Flow")
